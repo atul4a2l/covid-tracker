@@ -1,3 +1,25 @@
-ion-content ion-toolbar {
-  --background: translucent;
+ion-content.background{
+  --background: #1e1d21;
 }
+
+ion-card {
+  background: #262529;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 10px 10px 20px 0 rgba(0,0,0,.16);
+}
+ion-card-subtitle {
+  color: #aaaaaa;
+}
+ion-card-title {
+  font-weight: 700;
+}
+p.text{
+  color: white;
+}
+.last-update h6 {
+  margin: 0px;
+  color:#aaaaaa;
+}
+
+

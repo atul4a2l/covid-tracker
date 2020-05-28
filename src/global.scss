@@ -24,3 +24,61 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.toast-scheme
+{
+--background:#aaaaaa;
+--color:  #262529 ;
+--width: fit-content;
+--border-radius:25px;
+}
+.text-center {
+    text-align: center;
+  }
+  .no-margin {
+    margin: 0px !important;
+  }
+
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  
+    50% {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+  
+    100% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  
+    50% {
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+  
+    100% {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  
+  .faa-pulse.animated,
+  .faa-pulse.animated-hover:hover,
+  .faa-parent.animated-hover:hover > .faa-pulse {
+    -webkit-animation: pulse 2s linear infinite;
+    animation: pulse 2s linear infinite;
+  }

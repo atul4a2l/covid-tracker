@@ -1,0 +1,55 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>
+        Tracker
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="padding">
+    <div  class="spin" *ngIf="isLoading">
+      <ion-spinner color="primary"></ion-spinner>
+    </div>
+    <ng-container *ngIf="!isLoading">
+    <section style="margin: 10px 12px 5px ;">
+    <ion-card>
+      <div class="the-header">
+        <div class="header-text">
+        </div>
+        <div class="background">
+          <img src="../../assets/tracker.jpg"/>
+        </div>
+        <button ion-fab-button>
+          <ion-icon name="location" class="faa-pulse animated fa-4x"></ion-icon>
+        </button>
+      </div>
+      <div class="the-content" padding>
+        <h2 class="text-center"><span style="color: #f73e53;">COVID </span>TRACKER</h2>
+        <div padding>
+          <h5 class="text-center" style="padding: 10px 0px;">You're approximately {{totalDistance | number:'1.0-2'}} KM away from nearest confirmed case</h5>
+        </div>
+      <div style="text-align: center; margin-top: 30px;">
+        <ion-button expand="block" color="danger" (click)="locateMe()">Locate me</ion-button>
+      </div>
+      <ion-grid class="text-center">
+        <ion-row>
+          <ion-col size="6">
+            <h6 style="color: #f73e53;"><u>Developers</u></h6>
+            <p class="no-margin" style="font-size: 12px;">Atul Gupta</p>
+            <p class="no-margin" style="font-size: 12px;">Shashwat Shivam</p>
+            <p class="no-margin" style="font-size: 12px;">Ayushman Bishen</p>
+          </ion-col>
+          <ion-col size="6">
+            <h6 style="color: #f73e53;"><u>References</u></h6>
+            <p class="no-margin" style="font-size: 12px;">covid19india.org</p>
+            <p class="no-margin" style="font-size: 12px;">worldometers.info</p>
+            <p class="no-margin" style="font-size: 12px;">who.int</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>  
+      </div>
+    </ion-card>
+    </section>
+    </ng-container>
+  </ion-content>
+  

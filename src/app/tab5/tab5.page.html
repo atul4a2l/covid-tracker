@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="primary">
+        <ion-button color="secondary" (click)="doRefresh()">
+          <ion-icon name="refresh"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>
+        WHO
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<iframe [src]="srcLink" style="border: none;height: 100%;width: 100%;"></iframe>
+</ion-content>
